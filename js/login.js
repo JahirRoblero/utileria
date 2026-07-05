@@ -60,6 +60,13 @@ async function validar(event) {
     return;
   }
 
+  console.table({
+    Correo: email,
+    "Correo válido": validarCorreo(email),
+    "Contraseña escrita": "********",
+    "Contraseña válida": validarPassword(contraseña),
+  });
+
   await Swal.fire({
     icon: "success",
     title: "Login validado",

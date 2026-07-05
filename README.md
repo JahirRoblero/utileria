@@ -388,8 +388,16 @@ Aquí se muestra que si no se coloca un link correcto, aparece un error.
 ### Validación final
 
 Si todos los datos son correctos, aparece una alerta final mostrando que el formulario fue validado.
+Tambien en la consola aparece una confirmacion que los datos fueron registrados correctamente.
 
 ![Validación final](img/ventanaFinal.png)
+
+### Validación final login
+
+Si agregamos el correo y una contraseña valida en el login nos dira que los datos son
+validos y en la consola tambien.
+
+![Validación final](img/loginFinal.png)
 
 ## Conclusión
 
