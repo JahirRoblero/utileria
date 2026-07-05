@@ -5,6 +5,11 @@
 **Materia:** Programación Web  
 **Actividad:** Librería JavaScript
 
+## Enlaces del proyecto
+
+**Página web:** [Ver página](https://jahirroblero.github.io/utileria/)  
+**Video demostrativo:** [Ver video](https://www.youtube.com/watch?v=ZZgP6AoEhI0&feature=youtu.be)
+
 ## Objetivo
 
 La librería `utileria.js` sirve para validar datos comunes dentro de formularios web usando JavaScript puro, sin frameworks y sin componentes visuales.
