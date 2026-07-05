@@ -19,7 +19,7 @@ El objetivo es reutilizar las funciones en diferentes páginas, como el formular
 ## Estructura del proyecto
 
 ```txt
-ACTIVIDAD2/
+utileria/
 │
 ├── README.md
 ├── index.html
