@@ -226,6 +226,17 @@ async function validar(event) {
 
   let estadoEdad = esMayor ? "Mayor de edad" : "Menor de edad";
 
+  console.log("Primer nombre:", primerNombre);
+  console.log("Segundo nombre:", segundoNombre || "No ingresado");
+  console.log("Correo:", email);
+  console.log("Número favorito:", numero);
+  console.log("Fecha de nacimiento:", fechaNacimiento);
+  console.log("Edad calculada:", edad);
+  console.log("Estado de edad:", estadoEdad);
+  console.log("Contraseña válida:", validarPassword(contraseña));
+  console.log("IPv4:", ipv4);
+  console.log("Página web:", paginaWeb);
+
   await Swal.fire({
     icon: "success",
     title: "Formulario válido",
