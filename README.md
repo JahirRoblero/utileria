@@ -1,6 +1,6 @@
 # Actividad 2 - Librería utileria.js
 
-**Alumno:** Gómez Roblero Ángel Jahir  
+**Alumno:** Gomez Roblero Angel Jahir  
 **Docente:** Adelina Martínez Nieto  
 **Materia:** Programación Web  
 **Actividad:** Librería JavaScript
