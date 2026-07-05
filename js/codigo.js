@@ -230,7 +230,7 @@ async function validar(event) {
     icon: "success",
     title: "Formulario válido",
     html: `
-    <p>Todos los datos son correctos.</p>
+    <p>Todos los datos son válidos.</p>
     <p><b>Edad:</b> ${edad} años</p>
     <p><b>Estado:</b> ${estadoEdad}</p>
     <p><b>IPv4:</b> ${ipv4}</p>
