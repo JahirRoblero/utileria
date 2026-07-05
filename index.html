@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Componente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="encabezado">
+      <h1 class="titulo">
+        <span id="Formulariode">Formulario de</span> PROGRAMACIÓN WEB
+      </h1>
+    </div>
+
+    <form novalidate>
+      <div class="contenedor">
+        <label>Ingresa tu primer nombre</label>
+        <input type="text" id="primerNombre" placeholder="Ej. Angel" />
+
+        <label>Ingresa tu segundo nombre (opcional)</label>
+        <input type="text" id="segundoNombre" placeholder="Ej. Jahir" />
+
+        <label>Ingresa tu correo electronico</label>
+        <input type="email" placeholder="ejemplo@gmail.com" id="email" />
+
+        <label>Ingresa tu numero favorito maximo 10 digitos</label>
+        <input type="text" id="numero" placeholder="Ej. 9512424738" />
+
+        <label>Selecciona tu fecha de nacimiento</label>
+        <input type="date" id="fechaNacimiento" />
+
+        <label>Ingresa una contraseña segura</label>
+        <input type="password" id="contraseña" />
+
+        <label>Ingresa la direccion ipv4 de tu base de datos</label>
+        <input type="text" id="ipv4" placeholder="Ej. 192.168.1.1" />
+
+        <label>Ingresa el link de tu pagina web</label>
+        <input
+          type="text"
+          id="paginaWeb"
+          placeholder="Ej. https://google.com"
+        />
+
+        <button type="submit" id="btnEnviar" onclick="validar(event)">
+          Validar
+        </button>
+        <button type="button" id="btnLimpiar" onclick="limpiar()">
+          Limpiar
+        </button>
+        <a href="login.html" class="iniciar-sesion">Iniciar sesión</a>
+      </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/utileria.js"></script>
+    <script src="js/codigo.js"></script>
+
+    <footer class="foot">
+      <p>ALUMNO: GOMEZ ROBLERO ANGEL JAHIR</p>
+      <p>DOCENTE: MARTINEZ NIETO ADELINA</p>
+      <p>MATERIA: PROGRAMACIÓN WEB</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+}
+.titulo {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 200;
+    color: hsl(0, 0%, 100%);
+}
+label, input {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 200;
+    color: hsl(0, 0%, 0%);
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.encabezado {
+  text-align: center;
+  background: linear-gradient(45deg, #000 28%, #ff0000 99%, #ff0000 100%);
+  overflow: hidden;
+}
+
+#Formulariode {
+    color: rgb(194, 0, 0);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: flex-start;
+}
+
+.contenedor {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border: 1px solid #ffe0e0;
+  border-radius: 10px;
+  max-width: 450px;
+  width: 100%;
+  background: white;
+  box-shadow: 0 10px 30px rgba(255, 176, 176, 0.1);
+}
+
+input {
+  background: white;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 16px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  border-color: #ff898995;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.15);
+}
+a{
+  text-decoration: none;
+  text-align: center;
+}
+button, a{
+    background: linear-gradient(45deg, #000 28%, #ff0000 99%, #ff0000 100%) ;
+    color: white;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.25);
+}
+
+input[type="date"]{
+    cursor: pointer;
+}
+
+
+.foot {
+    background-color: #000;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:100;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 200;
+}
