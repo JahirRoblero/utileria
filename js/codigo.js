@@ -21,6 +21,7 @@ async function validar(event) {
       color: "#000000ff",
       iconColor: "#ff0000ff",
     });
+
     return;
   }
 
@@ -128,7 +129,7 @@ async function validar(event) {
   if (edad < 0) {
     Swal.fire({
       icon: "warning",
-      title: "Fecha futura",
+      title: "Fecha invalida",
       text: "Por favor ingresa una fecha de nacimiento válida.",
       confirmButtonText: "Ok",
       confirmButtonColor: "#fb2525ff",
@@ -137,30 +138,6 @@ async function validar(event) {
       iconColor: "#ff0000ff",
     });
     return;
-  }
-
-  if (esMayor) {
-    await Swal.fire({
-      icon: "success",
-      title: "Mayor de edad",
-      text: `Tu edad es ${edad} años. Eres mayor de edad.`,
-      confirmButtonText: "Ok",
-      confirmButtonColor: "#22c55e",
-      background: "#e6ffed",
-      color: "#000000ff",
-      iconColor: "#22c55e",
-    });
-  } else {
-    await Swal.fire({
-      icon: "warning",
-      title: "Menor de edad",
-      text: `Tu edad es ${edad} años. Eres menor de edad.`,
-      confirmButtonText: "Ok",
-      confirmButtonColor: "#fb2525ff",
-      background: "#ffe6e6ff",
-      color: "#000000ff",
-      iconColor: "#ff0000ff",
-    });
   }
 
   if (contraseña === "") {
@@ -247,15 +224,18 @@ async function validar(event) {
     return;
   }
 
+  let estadoEdad = esMayor ? "Mayor de edad" : "Menor de edad";
+
   await Swal.fire({
     icon: "success",
     title: "Formulario válido",
     html: `
-      <p>Todos los datos son correctos.</p>
-      <p><b>Edad:</b> ${edad} años</p>
-      <p><b>IPv4:</b> ${ipv4}</p>
-      <p><b>Página web:</b> ${paginaWeb}</p>
-    `,
+    <p>Todos los datos son correctos.</p>
+    <p><b>Edad:</b> ${edad} años</p>
+    <p><b>Estado:</b> ${estadoEdad}</p>
+    <p><b>IPv4:</b> ${ipv4}</p>
+    <p><b>Página web:</b> ${paginaWeb}</p>
+  `,
     confirmButtonText: "Ok",
     confirmButtonColor: "#22c55e",
     background: "#e6ffed",
